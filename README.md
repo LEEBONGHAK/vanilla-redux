@@ -1,3 +1,3 @@
-# vanilla-redux
+# Vanilla Redux
 
 Learning Vanilla-Redux
