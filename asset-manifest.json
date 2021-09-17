@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.js": "/vanilla-redux/static/js/main.d6e4807e.chunk.js",
+    "main.js.map": "/vanilla-redux/static/js/main.d6e4807e.chunk.js.map",
+    "runtime-main.js": "/vanilla-redux/static/js/runtime-main.8851f478.js",
+    "runtime-main.js.map": "/vanilla-redux/static/js/runtime-main.8851f478.js.map",
+    "static/js/2.612fa0d0.chunk.js": "/vanilla-redux/static/js/2.612fa0d0.chunk.js",
+    "static/js/2.612fa0d0.chunk.js.map": "/vanilla-redux/static/js/2.612fa0d0.chunk.js.map",
+    "index.html": "/vanilla-redux/index.html"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8851f478.js",
+    "static/js/2.612fa0d0.chunk.js",
+    "static/js/main.d6e4807e.chunk.js"
+  ]
+}
