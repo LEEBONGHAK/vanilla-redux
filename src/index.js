@@ -1,5 +1,6 @@
 import { createStore } from 'redux';
 
+// RURE REDUX: COUNTER
 const plus = document.querySelector("#plus");
 const minus = document.querySelector("#minus");
 const number = document.querySelector("span");
@@ -35,3 +36,35 @@ store.subscribe(onChange);
 // reducer에게 Action을 보내는 방법 : store.dispatch({key: value});
 plus.addEventListener("click", () => store.dispatch({ type: PLUS}));
 minus.addEventListener("click", () => store.dispatch({ type: MINUS}));
+
+
+// RURE REDUX: TO DO LIST
+const form = document.querySelector("form");
+const input = document.querySelector("input");
+const ul = document.querySelector("ul");
+
+const ADD_TODO = "ADD_TODO";
+const DELETE_TODO = "DELETE_TODO";
+
+const toDoModifier = (state = [], action) => {
+  console.log(action);
+  switch (action.type) {
+    case ADD_TODO:
+      return [];
+    case DELETE_TODO:
+      return [];
+    default:
+      return state;
+  }
+};
+
+const toDoStore = createStore(toDoModifier);
+
+const onSubmit = event => {
+  event.preventDefault();
+  const toDo = input.value;
+  input.value = "";
+  toDoStore.dispatch({ type: ADD_TODO, text: toDo });
+}
+
+form.addEventListener("submit", onSubmit);
