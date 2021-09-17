@@ -1,4 +1,5 @@
 import { createStore } from 'redux';
+import { v4 as uuidv4 } from 'uuid';
 
 // RURE REDUX: COUNTER
 const plus = document.querySelector("#plus");
@@ -50,7 +51,7 @@ const toDoModifier = (state = [], action) => {
   console.log(action);
   switch (action.type) {
     case ADD_TODO:
-      return [];
+      return [...state, { text: action.text, id: uuidv4() }];
     case DELETE_TODO:
       return [];
     default:
